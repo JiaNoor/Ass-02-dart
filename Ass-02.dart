@@ -41,4 +41,43 @@ void main(){
       print("Incorrect Password");
     }
   }
+
+  // Q9
+  List<dynamic> names = ["Ali", "Sara", "Zaid"];
+  List<dynamic> scores = [450, 400, 327];
+  print("${names[0]}'s score is ${scores[0]} and the percentage is ${(scores[0]*100)/500}.");
+  print("${names[1]}'s score is ${scores[1]} and the percentage is ${(scores[1]*100)/500}.");
+  print("${names[2]}'s score is ${scores[2]} and the percentage is ${(scores[2]*100)/500}.");
+
+  // Q11:  
+  var word = "Hyderabad";
+  print(word);
+  print(word.replaceRange(0,5,"Islam"));
+
+// Q12:  
+  var custName = "Mr. Ali";
+  var currentMonth = "May";
+  var units = 301;
+  var chargePerUnit = 25.78;
+  var netAmount = units * chargePerUnit;
+  var lateAmount = 200;
+  var grossAmount = netAmount + lateAmount;
+  print("Customer Name: ${custName}");
+  print("Current Month: ${currentMonth}");
+  print("Number of units: ${units}");
+  print("Charges per unit: ${chargePerUnit}");
+  print("Net Amount Payable (within Due Date): ${netAmount.toStringAsFixed(2)}");
+  print("Late Payment Surcharge: ${lateAmount}");
+  print("Gross Amount Payable (after Due Date): ${grossAmount.toStringAsFixed(2)}");
+
+  // Q13:  
+  var date = "19-feb-2020";
+  var n = date.substring(0,2);
+  var a = int.parse(n);
+  if (a < 15){
+    print("First fifteen days of the month");
+  }
+  else{
+    print("Last days of the month");
+  }  
 }
